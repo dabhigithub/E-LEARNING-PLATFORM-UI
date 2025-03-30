@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnet - Online Learning Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <!-- <img src="images/logos/learnet-logo.png" alt="Learnet Logo"> -->
+                    Learnet
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dashboard.html">My Learning</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Desktop Search -->
+            <div class="desktop-search">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search for courses, topics, or skills">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <!-- Mobile Search Toggle -->
+            <button class="mobile-search-toggle">
+                <i class="fas fa-search"></i>
+            </button>
+            
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline login-btn">Login</a>
+                <a href="#" class="btn btn-primary signup-btn">Sign Up</a>
+                
+                <!-- User Profile (Hidden by default, shown after login) -->
+                <div class="user-profile" style="display: none;">
+                    <div class="user-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar">
+                        <div class="notification-badge">3</div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                            <li><a href="#"><i class="fas fa-bell"></i> Notifications <span class="badge">3</span></a></li>
+                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Search Container -->
+    <div class="mobile-search-container">
+        <form class="search-bar">
+            <input type="text" placeholder="Search for courses, topics, or skills">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <button class="mobile-search-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transform Your Future With Online Learning</h1>
+                <p>Access over 1,000 high-quality courses from expert instructors around the world.</p>
+                <form class="search-bar expanded">
+                    <input type="text" placeholder="What do you want to learn?" autocomplete="off">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                    <!-- Search suggestions will appear here -->
+                </form>
+                <div class="category-tags">
+                    <span>Popular:</span>
+                    <a href="#">Web Development</a>
+                    <a href="#">Data Science</a>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">Business</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/banners/banner homepage.png" alt="Students learning online">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="featured-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Courses</h2>
+                <a href="courses.html" class="view-all">View All</a>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/web-development.jpeg" alt="Web Development">
+                        <div class="course-badge">Bestseller</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-info">
+                            <span class="category">Web Development</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8 (2.4k)</span>
+                        </div>
+                        <h3><a href="course-details.html">Complete Web Development Bootcamp</a></h3>
+                        <p class="instructor">By John Smith</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 42 hours</span>
+                            <span><i class="fas fa-video"></i> 145 lectures</span>
+                            <span><i class="fas fa-level-up-alt"></i> All levels</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$89.99</span>
+                            <a href="course-details.html" class="btn btn-outline">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/data-science.jpeg" alt="Data Science">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-info">
+                            <span class="category">Data Science</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7 (1.8k)</span>
+                        </div>
+                        <h3><a href="course-details.html">Data Science: Zero to Hero</a></h3>
+                        <p class="instructor">By Sarah Johnson</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 38 hours</span>
+                            <span><i class="fas fa-video"></i> 120 lectures</span>
+                            <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$79.99</span>
+                            <a href="course-details.html" class="btn btn-outline">View Course</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/machine-learning.jpeg" alt="Machine Learning">
+                        <div class="course-badge">New</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-info">
+                            <span class="category">Machine Learning</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9 (1.2k)</span>
+                        </div>
+                        <h3><a href="course-details.html">Machine Learning A-Z: Hands-On Python</a></h3>
+                        <p class="instructor">By Michael Brown</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 45 hours</span>
+                            <span><i class="fas fa-video"></i> 160 lectures</span>
+                            <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="price">$94.99</span>
+                            <a href="course-details.html" class="btn btn-outline">View Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Top Categories</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>350+ Courses</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Science</h3>
+                    <p>210+ Courses</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Design</h3>
+                    <p>180+ Courses</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Business</h3>
+                    <p>290+ Courses</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Development</h3>
+                    <p>150+ Courses</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon"><i class="fas fa-language"></i></div>
+                    <h3>Languages</h3>
+                    <p>120+ Courses</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header centered">
+                <h2>Why Choose Learnet?</h2>
+                <p>We're committed to providing the best learning experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certified Courses</h3>
+                    <p>Earn certificates recognized by industry leaders worldwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from professionals with real-world experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-clock"></i></div>
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace, anytime and anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fas fa-sync"></i></div>
+                    <h3>Lifetime Access</h3>
+                    <p>Pay once and get unlimited access to course content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header centered">
+                <h2>What Our Students Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Learnet has completely transformed my career. I went from knowing nothing about web development to landing a job at a top tech company in just 6 months."</p>
+                    <div class="student-info">
+                        <img src="images/testimonials/user1.jpg" alt="David Wilson">
+                        <div>
+                            <h4>David Wilson</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"The Data Science course was comprehensive and practical. The instructor made complex concepts easy to understand with real-world examples."</p>
+                    <div class="student-info">
+                        <img src="images/testimonials/user2.jpg" alt="Emily Davis">
+                        <div>
+                            <h4>Emily Davis</h4>
+                            <p>Data Analyst</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Learning?</h2>
+                <p>Join over 1 million students already learning on Learnet</p>
+                <a href="courses.html" class="btn btn-primary btn-large">Browse Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Learnet</h3>
+                    <p>Empowering individuals through quality education and skill development. Join our community of learners today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Become an Instructor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get the latest news and updates delivered straight to your inbox.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Made with ❤️ by Abhishek</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

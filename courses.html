@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Learnet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <!-- <img src="images/logos/learnet-logo.png" alt="Learnet Logo"> -->
+                    Learnet
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="dashboard.html">My Learning</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Courses Hero -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Browse All Courses</h1>
+            <p>Explore our collection of high-quality courses taught by industry experts</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-layout">
+                <!-- Filters Sidebar -->
+                <div class="courses-filters">
+                    <div class="filter-group">
+                        <h3>Search</h3>
+                        <div class="search-bar">
+                            <input type="text" id="course-search" placeholder="Search courses...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="webdev" name="category" value="webdev">
+                                <label for="webdev">Web Development</label>
+                                <span class="count">152</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="datascience" name="category" value="datascience">
+                                <label for="datascience">Data Science</label>
+                                <span class="count">98</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="machinelearning" name="category" value="machinelearning">
+                                <label for="machinelearning">Machine Learning</label>
+                                <span class="count">63</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="business" name="category" value="business">
+                                <label for="business">Business</label>
+                                <span class="count">85</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="design" name="category" value="design">
+                                <label for="design">Design</label>
+                                <span class="count">74</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="mobile" name="category" value="mobile">
+                                <label for="mobile">Mobile Development</label>
+                                <span class="count">42</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Level</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="beginner" name="level" value="beginner">
+                                <label for="beginner">Beginner</label>
+                                <span class="count">215</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="intermediate" name="level" value="intermediate">
+                                <label for="intermediate">Intermediate</label>
+                                <span class="count">156</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="advanced" name="level" value="advanced">
+                                <label for="advanced">Advanced</label>
+                                <span class="count">64</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="alllevels" name="level" value="alllevels">
+                                <label for="alllevels">All Levels</label>
+                                <span class="count">89</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="free" name="price" value="free">
+                                <label for="free">Free</label>
+                                <span class="count">42</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="paid" name="price" value="paid">
+                                <label for="paid">Paid</label>
+                                <span class="count">482</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Rating</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="4.5up" name="rating" value="4.5up">
+                                <label for="4.5up">4.5 & Up</label>
+                                <span class="count">187</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="4up" name="rating" value="4up">
+                                <label for="4up">4.0 & Up</label>
+                                <span class="count">328</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="3.5up" name="rating" value="3.5up">
+                                <label for="3.5up">3.5 & Up</label>
+                                <span class="count">412</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-outline btn-block" id="clear-filters">Clear All Filters</button>
+                </div>
+
+                <!-- Courses Grid -->
+                <div class="courses-list">
+                    <div class="courses-header">
+                        <div class="results-count">Showing <span id="results-number">524</span> results</div>
+                        <div class="sort-options">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="popular">Most Popular</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="courses-grid">
+                        <!-- Course Card 1 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/web-development.jpeg" alt="Web Development">
+                                <div class="course-badge">Bestseller</div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.8 (2.4k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Complete Web Development Bootcamp</a></h3>
+                                <p class="instructor">By John Smith</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 42 hours</span>
+                                    <span><i class="fas fa-video"></i> 145 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> All levels</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$89.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 2 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/data-science.jpeg" alt="Data Science">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Data Science</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.7 (1.8k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Data Science: Zero to Hero</a></h3>
+                                <p class="instructor">By Sarah Johnson</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 38 hours</span>
+                                    <span><i class="fas fa-video"></i> 120 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$79.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 3 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/machine-learning.jpeg" alt="Machine Learning">
+                                <div class="course-badge">New</div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Machine Learning</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.9 (1.2k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Machine Learning A-Z: Hands-On Python</a></h3>
+                                <p class="instructor">By Michael Brown</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 45 hours</span>
+                                    <span><i class="fas fa-video"></i> 160 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$94.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 4 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/javascript.jpeg" alt="JavaScript">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.6 (3.2k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Advanced JavaScript Concepts</a></h3>
+                                <p class="instructor">By Lisa Anderson</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 26 hours</span>
+                                    <span><i class="fas fa-video"></i> 92 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> Advanced</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$69.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 5 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/python.jpeg" alt="Python">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Programming</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.8 (5.1k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Python for Beginners: Learn Programming from Scratch</a></h3>
+                                <p class="instructor">By Robert Williams</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 32 hours</span>
+                                    <span><i class="fas fa-video"></i> 105 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$84.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 6 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/mobile-development.jpeg" alt="Mobile Development">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Mobile Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.7 (2.8k)</span>
+                                </div>
+                                <h3><a href="course-details.html">iOS & Swift - The Complete iOS App Development Bootcamp</a></h3>
+                                <p class="instructor">By Jennifer Lee</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 55 hours</span>
+                                    <span><i class="fas fa-video"></i> 175 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> All levels</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$99.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 7 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/react.png" alt="React Development">
+                                <div class="course-badge free-badge">Free</div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Design</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.5 (1.5k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Intro to UX Design: User Experience Fundamentals</a></h3>
+                                <p class="instructor">By Emma Wilson</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 8 hours</span>
+                                    <span><i class="fas fa-video"></i> 45 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price free-price">Free</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Course Card 8 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/business.jpg" alt="Business">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Business</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.6 (2.2k)</span>
+                                </div>
+                                <h3><a href="course-details.html">The Complete Digital Marketing Course - 12 Courses in 1</a></h3>
+                                <p class="instructor">By Thomas Clark</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 52 hours</span>
+                                    <span><i class="fas fa-video"></i> 180 lectures</span>
+                                    <span><i class="fas fa-level-up-alt"></i> All levels</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$129.99</span>
+                                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                        <ul class="pagination-numbers">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">24</a></li>
+                        </ul>
+                        <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Learnet</h3>
+                    <p>Empowering individuals worldwide through accessible and quality online education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest courses and offers.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Made with ❤️ by Abhishek</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

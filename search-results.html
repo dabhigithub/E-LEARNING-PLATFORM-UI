@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Learnet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <!-- <img src="images/logos/learnet-logo.png" alt="Learnet Logo"> -->
+                    Learnet
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="dashboard.html">My Learning</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Desktop Search -->
+            <div class="desktop-search">
+                <form class="search-bar">
+                    <input type="text" placeholder="Search for courses, topics, or skills">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <!-- Mobile Search Toggle -->
+            <button class="mobile-search-toggle">
+                <i class="fas fa-search"></i>
+            </button>
+            
+            <div class="user-profile">
+                <div class="user-avatar">
+                    <img src="#" alt="User Avatar">
+                    <div class="notification-badge">3</div>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i> Notifications <span class="badge">3</span></a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Search Container -->
+    <div class="mobile-search-container">
+        <form class="search-bar">
+            <input type="text" placeholder="Search for courses, topics, or skills">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <button class="mobile-search-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Search Results Header -->
+    <section class="search-results-header">
+        <div class="container">
+            <h1 class="search-results-title">Search results for "..."</h1>
+            <form class="search-bar">
+                <input type="text" placeholder="Search for courses, topics, or skills">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Search Results Content -->
+    <section class="search-results">
+        <div class="container">
+            <div class="search-results-count">
+                Found <span>0</span> results
+            </div>
+            
+            <div class="search-filters">
+                <button class="search-filter-btn active">All</button>
+                <button class="search-filter-btn">Courses</button>
+                <button class="search-filter-btn">Instructors</button>
+                <button class="search-filter-btn">Topics</button>
+                <button class="search-filter-btn">Articles</button>
+            </div>
+            
+            <div class="courses-layout">
+                <!-- Filters Sidebar -->
+                <div class="courses-filters">
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-web" value="web-development">
+                                <label for="cat-web">Web Development</label>
+                                <span class="count">42</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-data" value="data-science">
+                                <label for="cat-data">Data Science</label>
+                                <span class="count">38</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-mobile" value="mobile-development">
+                                <label for="cat-mobile">Mobile Development</label>
+                                <span class="count">24</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-design" value="design">
+                                <label for="cat-design">UI/UX Design</label>
+                                <span class="count">18</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="cat-business" value="business">
+                                <label for="cat-business">Business</label>
+                                <span class="count">15</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group levels">
+                        <h3>Level</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="level-beginner" value="beginner">
+                                <label for="level-beginner">Beginner</label>
+                                <span class="count">56</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="level-intermediate" value="intermediate">
+                                <label for="level-intermediate">Intermediate</label>
+                                <span class="count">42</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="level-advanced" value="advanced">
+                                <label for="level-advanced">Advanced</label>
+                                <span class="count">21</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="level-all" value="all-levels">
+                                <label for="level-all">All Levels</label>
+                                <span class="count">18</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group price">
+                        <h3>Price</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="price-free" value="free">
+                                <label for="price-free">Free</label>
+                                <span class="count">24</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="price-paid" value="paid">
+                                <label for="price-paid">Paid</label>
+                                <span class="count">113</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group ratings">
+                        <h3>Ratings</h3>
+                        <div class="checkbox-filters">
+                            <div class="filter-item">
+                                <input type="checkbox" id="rating-4.5" value="4.5">
+                                <label for="rating-4.5">4.5 & Up</label>
+                                <span class="count">68</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="rating-4.0" value="4.0">
+                                <label for="rating-4.0">4.0 & Up</label>
+                                <span class="count">42</span>
+                            </div>
+                            <div class="filter-item">
+                                <input type="checkbox" id="rating-3.5" value="3.5">
+                                <label for="rating-3.5">3.5 & Up</label>
+                                <span class="count">27</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Results List -->
+                <div class="courses-list">
+                    <div class="courses-header">
+                        <div class="results-count">
+                            Showing <span>1-8</span> of <span class="total-results">0</span> results
+                        </div>
+                        <div class="sort-options">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="relevance">Most Relevant</option>
+                                <option value="popular">Most Popular</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Results Grid -->
+                    <div class="courses-grid search-results-grid">
+                        <!-- Course Card 1 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/javascript.jpeg" alt="JavaScript Course">
+                                <div class="course-badge">Bestseller</div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.8 (2.5k)</span>
+                                </div>
+                                <h3><a href="course-details.html">JavaScript: The Complete Guide 2023</a></h3>
+                                <p class="instructor">By John Smith</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 22 hours</span>
+                                    <span><i class="fas fa-video"></i> 132 lectures</span>
+                                    <span><i class="fas fa-signal"></i> All Levels</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$89.99</span>
+                                    <a href="course-details.html" class="btn btn-sm btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 2 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/web-development.jpeg" alt="Web Development Course">
+                                <div class="course-badge">Hot & New</div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.9 (1.2k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Complete Web Development Bootcamp</a></h3>
+                                <p class="instructor">By Sarah Johnson</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 63 hours</span>
+                                    <span><i class="fas fa-video"></i> 425 lectures</span>
+                                    <span><i class="fas fa-signal"></i> Beginner</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$94.99</span>
+                                    <a href="course-details.html" class="btn btn-sm btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 3 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/react.png" alt="React Course">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.7 (3.1k)</span>
+                                </div>
+                                <h3><a href="course-details.html">React - The Complete Guide with Redux</a></h3>
+                                <p class="instructor">By Michael Brown</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 40 hours</span>
+                                    <span><i class="fas fa-video"></i> 185 lectures</span>
+                                    <span><i class="fas fa-signal"></i> Intermediate</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$84.99</span>
+                                    <a href="course-details.html" class="btn btn-sm btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 4 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="images/courses/python.jpeg" alt="Python Course">
+                                <div class="course-badge free-badge">Free</div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.5 (8.2k)</span>
+                                </div>
+                                <h3><a href="course-details.html">HTML & CSS: Build Responsive Websites</a></h3>
+                                <p class="instructor">By Emily Davis</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 15 hours</span>
+                                    <span><i class="fas fa-video"></i> 82 lectures</span>
+                                    <span><i class="fas fa-signal"></i> Beginner</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price free-price">Free</span>
+                                    <a href="course-details.html" class="btn btn-sm btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 5 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="https://source.unsplash.com/random/300x200/?nodejs" alt="Node.js Course">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.6 (1.8k)</span>
+                                </div>
+                                <h3><a href="course-details.html">Node.js: The Complete Guide to Backend</a></h3>
+                                <p class="instructor">By David Wilson</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 35 hours</span>
+                                    <span><i class="fas fa-video"></i> 178 lectures</span>
+                                    <span><i class="fas fa-signal"></i> Intermediate</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$79.99</span>
+                                    <a href="course-details.html" class="btn btn-sm btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 6 -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="https://source.unsplash.com/random/300x200/?typescript" alt="TypeScript Course">
+                            </div>
+                            <div class="course-content">
+                                <div class="course-info">
+                                    <span class="category">Web Development</span>
+                                    <span class="rating"><i class="fas fa-star"></i> 4.7 (950)</span>
+                                </div>
+                                <h3><a href="course-details.html">TypeScript: From Zero to Hero</a></h3>
+                                <p class="instructor">By Jennifer Lee</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-clock"></i> 18 hours</span>
+                                    <span><i class="fas fa-video"></i> 95 lectures</span>
+                                    <span><i class="fas fa-signal"></i> Intermediate</span>
+                                </div>
+                                <div class="course-footer">
+                                    <span class="price">$69.99</span>
+                                    <a href="course-details.html" class="btn btn-sm btn-outline">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <ul class="pagination-numbers">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                        <button class="pagination-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Learnet</h3>
+                    <p>Empowering individuals through quality education and skill development. Join our community of learners today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Become an Instructor</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Get the latest news and updates delivered straight to your inbox.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy;Made with ❤️ by Abhishek</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

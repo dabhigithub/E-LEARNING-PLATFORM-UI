@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Video Player - Learnet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/video-player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="video-player-page">
+    <!-- Header Section -->
+    <header class="video-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Learnet</h1>
+            </div>
+            <div class="course-title">
+                <h2>Complete Web Development Bootcamp</h2>
+            </div>
+            <div class="header-actions">
+                <a href="dashboard.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <img src="images/users/profile.jpg" alt="User Avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="video-player-container">
+        <div class="container">
+            <div class="video-player-grid">
+                <!-- Video Player -->
+                <div class="video-player-wrapper">
+                    <video class="video-player" controls>
+                        <source src="videos/course-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button class="control-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                        </div>
+                        <button class="control-btn">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <button class="control-btn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Course Content -->
+                <div class="course-content">
+                    <div class="course-content-header">
+                        <h3>Course Content</h3>
+                        <p><i class="fas fa-clock"></i> 12 lessons • 4h 30m total length</p>
+                    </div>
+                    <div class="lesson-list">
+                        <div class="lesson-item active">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Introduction to Web Development</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 15:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item completed">
+                            <div class="lesson-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">HTML Basics</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 25:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item completed">
+                            <div class="lesson-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">CSS Fundamentals</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 30:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">JavaScript Essentials</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 35:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Responsive Design</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 40:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Bootstrap Framework</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 45:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">jQuery and DOM Manipulation</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 30:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">AJAX and API Integration</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 35:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Backend Development Basics</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 40:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Database Integration</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 45:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Security Best Practices</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 30:00</p>
+                            </div>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="lesson-content">
+                                <h4 class="lesson-title">Deployment and Hosting</h4>
+                                <p class="lesson-duration"><i class="far fa-clock"></i> 25:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-progress">
+                        <div class="progress-info">
+                            <span class="progress-text">Course Progress</span>
+                            <span class="progress-percentage">45%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
