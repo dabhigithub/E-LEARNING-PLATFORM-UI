@@ -1,8 +1,7 @@
 # Learnet - Modern E-Learning Platform
 
-<div align="center">
-  <img src="images/logos/learnet-logo.png" alt="Learnet Logo" width="200px">
-  <br><br>
+[HOMEPAGE IMAGE](https://github.com/dabhigithub/E-LEARNING-PLATFORM-UI/blob/f4a1e94cca85aaa7636a0c714af7e50b9970c685/images/screenshots/homepage.png)
+HOMEPAGE IMAGE OF E-LEARNING PLATFORM 
   
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
   [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -52,18 +51,10 @@ Built with modern web technologies and best practices, Learnet offers a seamless
 
 ## 📸 Screenshots
 
-<div align="center">
-  <img src="images/screenshots/homepage.jpg" alt="Learnet Homepage" width="80%">
-  <p><em>Homepage showcasing featured courses and platform benefits</em></p>
-  <br>
-  
-  <img src="images/screenshots/video-player.jpg" alt="Learnet Video Player" width="80%">
-  <p><em>Interactive video player with course content sidebar</em></p>
-  <br>
-  
-  <img src="images/screenshots/dashboard.jpg" alt="Learnet Dashboard" width="80%">
-  <p><em>Student dashboard with progress tracking and course recommendations</em></p>
-</div>
+![DASHBOARD IMAGE](https://github.com/dabhigithub/E-LEARNING-PLATFORM-UI/blob/f4a1e94cca85aaa7636a0c714af7e50b9970c685/images/screenshots/dashboard.png)
+DASHBOARD IMAGE OF E-LEARNING PLATFORM
+
+!
 
 ## 🛠 Tech Stack
 
@@ -244,5 +235,5 @@ Future platform enhancements planned for upcoming releases:
 ---
 
 <div align="center">
-  <p>Designed and developed with ❤️ by the abhishek</p>
+  <p>Designed and developed with ❤️ by the Abhishek</p>
 </div> 
