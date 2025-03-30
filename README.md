@@ -1,6 +1,6 @@
 # Learnet - Modern E-Learning Platform
 
-[HOMEPAGE IMAGE](https://github.com/dabhigithub/E-LEARNING-PLATFORM-UI/blob/f4a1e94cca85aaa7636a0c714af7e50b9970c685/images/screenshots/homepage.png)
+![HOMEPAGE IMAGE](https://github.com/dabhigithub/E-LEARNING-PLATFORM-UI/blob/f4a1e94cca85aaa7636a0c714af7e50b9970c685/images/screenshots/homepage.png)
 HOMEPAGE IMAGE OF E-LEARNING PLATFORM 
   
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
