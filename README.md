@@ -1,5 +1,22 @@
 # Learnet - Modern E-Learning Platform
 
+*COMPANY*: CODTECH IT SOLUTIONS
+
+*NAME*: ABHISHEK KUMAR
+
+*INTERN ID*: CT08WSD
+
+*DOMAIN*: FRONTEND WEB DEVELOPMENT
+
+*DURATION*: 4 WEEKS 
+
+*MENTOR*: NEELA SANTOSH
+
+***********************************************************************************************************************************************
+
+
+# Learnet - Modern E-Learning Platform
+
 ![HOMEPAGE IMAGE](https://github.com/dabhigithub/E-LEARNING-PLATFORM-UI/blob/f4a1e94cca85aaa7636a0c714af7e50b9970c685/images/screenshots/homepage.png)
 HOMEPAGE IMAGE OF E-LEARNING PLATFORM 
   
